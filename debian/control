@@ -1,0 +1,25 @@
+Source: node-from2
+Section: web
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Build-Depends:
+ debhelper (>= 9)
+ , dh-buildinfo
+ , nodejs
+Standards-Version: 3.9.8
+Homepage: https://github.com/hughsk/from2
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-from2.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-from2.git
+
+Package: node-from2
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-inherits (>= 2.0.1)
+Description: wrapper for ReadableStream
+ Convenience wrapper for ReadableStream, with an API lifted from "from" and
+ "through2"
+ .
+ Node.js is an event-based server-side JavaScript engine.

@@ -1,0 +1,12 @@
+node-from2 (2.3.0-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 01:13:30 +0100
+
+node-from2 (2.3.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #847118)
+
+ -- Sruthi Chandran <srud@disroot.org>  Tue, 06 Dec 2016 00:28:44 +0530

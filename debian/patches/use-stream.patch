@@ -1,0 +1,10 @@
+Use stream instead of readable-stream
+
+--- a/index.js
++++ b/index.js
+@@ -1,4 +1,4 @@
+-var Readable = require('readable-stream').Readable
++var Readable = require('stream').Readable
+ var inherits = require('inherits')
+ 
+ module.exports = from2
