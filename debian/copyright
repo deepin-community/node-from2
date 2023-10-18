@@ -1,7 +1,8 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: from2
 Upstream-Contact: https://github.com/hughsk/from2/issues
 Source: https://github.com/hughsk/from2
+ https://registry.npmjs.org/@types/from2
 
 Files: *
 Copyright: 2016 Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)
@@ -9,6 +10,10 @@ License: Expat
 
 Files: debian/*
 Copyright: 2016 Sruthi Chandran <srud@disroot.org>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
@@ -31,4 +36,3 @@ License: Expat
  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
-
