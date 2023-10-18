@@ -1,5 +1,10 @@
-version=3
+version=4
 opts=\
-dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-from2-$1.tar.gz/ \
- https://github.com/hughsk/from2/tags .*/archive/v?([\d\.]+).tar.gz
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-from2-$1/ \
+ https://github.com/hughsk/from2/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-from2,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-from2-$1/" \
+ https://registry.npmjs.org/@types/from2 https://registry.npmjs.org/@types/from2/-/from2-([\d\.]+)@ARCHIVE_EXT@ group
